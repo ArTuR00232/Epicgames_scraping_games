@@ -31,7 +31,7 @@ def drive_iniciate():
 
 
 
-# in the page open, get all inner html
+# with the page open, get all inner html
 def get_pages(vall, driver):
     # Navigate to the webpage
     driver.get(f'https://store.epicgames.com/pt-BR/browse?sortBy=releaseDate&sortDir=DESC&category=Game&count=100&start={vall}')
@@ -66,7 +66,7 @@ def compare_queues(x, y):
     counter_x = Counter(x)
     counter_y = Counter(y)
 
-    # Find elements that appear exactly once in y but not in x
+    # Find elements that appear exactly once in y
     unique_elements = []
     for element, count in counter_y.items():
          if count >= 1 and counter_x.get(element, 0) >=1:
@@ -74,16 +74,7 @@ def compare_queues(x, y):
 
     return unique_elements
 
-#insert all informations in a DB
-def get_url(list, driver):
-    i=0
-    while i< len(list):
-        gamePageUrl = "https://store.epicgames.com/"+list[i]
-        page = driver.get(gamePageUrl)
-        time.sleep(2)
-        html = driver.page_source
-        #c.execute("INSERT INTO documentis_html (url, html, plataform) VALUES ( ?, ?, ?)", (gamePageUrl, html, plataform))
-        #conn.commit()
+     
 
 #write all links in a .TXT
 def write(list):
