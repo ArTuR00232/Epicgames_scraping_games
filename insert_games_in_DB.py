@@ -25,6 +25,8 @@ with open('fe.txt','r') as file:
     while (i<1878):
         lista.append(file.readline())
         i+=1
+       
+ 
 #to drible the bot searcher need to open a browser to each one link we have (1878 links)
 while j< len(lista):
     #get the Driver to navegate to all links
