@@ -1,6 +1,6 @@
 # Epicgames_scraping_games
 scraping games in epicgames
-the code is a study about scraping in web using selenium
+the code is a study about scraping in web using selenium/n
 OBSERVATIONS:
 1- Epicgames have a robot searcher, beacouse of this I have to do a macgayver.
 *I basically make the code open the browser for eatch link that I take from Epic.*
