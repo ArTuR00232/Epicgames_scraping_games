@@ -44,7 +44,7 @@ def get_pages(vall, driver):
 def parse_page(html):
     # Use BeautifulSoup to parse the HTML
     soup = BeautifulSoup(html, 'html.parser')
-    # jogos listados
+    # listed games
     gameCards = soup.find_all("a","css-g3jcms")
     infos =[gameCards,soup]
     return infos
