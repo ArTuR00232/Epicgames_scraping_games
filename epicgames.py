@@ -51,7 +51,6 @@ def parse_page(html):
 
 #in the list get all links
 def get_all_links(infos):
-    prevlink = ''
     links = []
     gameCards = infos[0]
     soup = infos[1]
