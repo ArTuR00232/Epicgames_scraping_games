@@ -15,9 +15,9 @@ c.execute('''CREATE TABLE IF NOT EXISTS documentis_html
              (id INTEGER PRIMARY KEY, url TEXT, html TEXT, plataform TEXT)''')
 
 #iniciate the drive to navegate in web
-def drive_iniciate():
-    FFdriver = 'home/artur/Documentos/faculdade/RIW/gekodriver.exe'
-    firefox = '/snap/firefox/2579/usr/lib/firefox/firefox'
+def drive_iniciate():    
+    FFdriver = '/snap/firefox/2605/usr/lib/firefox/geckodriver'
+    firefox = '/snap/firefox/2605/usr/lib/firefox/firefox'
 
 
     service = Service(executable_path = FFdriver)
